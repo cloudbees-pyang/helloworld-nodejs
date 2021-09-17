@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
   console.log('Hello World request.');
   res.render('index', { title: 'Hello', message: 'Hello Worlld!', 
         name: process.env.COMMIT_AUTHOR,
-        context: 'REPLACE_GITHUB_ORG', 
+        context: 'cloudbees-pyang', 
         buildNumber: process.env.BUILD_NUMBER, 
         shortCommit: process.env.SHORT_COMMIT})
 })
