@@ -18,4 +18,4 @@ jobs:
           # Determine the number of CPU cores
           CORES=$(nproc)
           # Run stress-ng to consume all CPU resources
-          stress-ng --cpu $CORES --timeout 120s
+          stress-ng --cpu 5 --timeout 120s
