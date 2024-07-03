@@ -1,0 +1,21 @@
+name: CPU Stress Test
+
+on: [workflow_dispatch]
+
+jobs:
+  stress-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install stress-ng
+        run: sudo apt-get install -y stress-ng
+
+      - name: Run CPU Stress Test
+        run: |
+          # Determine the number of CPU cores
+          CORES=$(nproc)
+          # Run stress-ng to consume all CPU resources
+          stress-ng --cpu $CORES --timeout 120s
