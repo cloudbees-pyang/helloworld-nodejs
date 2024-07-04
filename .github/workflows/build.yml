@@ -13,4 +13,4 @@ jobs:
         run: npm run build
 
   common-checks:
-    uses: .github/workflows/common-checks.yml@main
+    uses: ./common-checks.yml@main
