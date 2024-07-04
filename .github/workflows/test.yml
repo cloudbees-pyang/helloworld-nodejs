@@ -13,4 +13,4 @@ jobs:
         run: npm test
 
   common-checks:
-    uses: ./common-checks.yml@main
+    uses: ./common-check.yml@main
