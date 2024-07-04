@@ -1,0 +1,21 @@
+# org-workflows/.github/workflows/common-checks.yml
+name: Common Checks
+
+on: workflow_call
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Run ESLint
+        run: npm run lint
+
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Run security audit
+        run: npm audit
