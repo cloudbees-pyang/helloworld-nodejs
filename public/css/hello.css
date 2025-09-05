@@ -104,7 +104,26 @@ header {
 	-moz-text-rendering: optimizeLegibility;
 	text-rendering: optimizeLegibility;
 	margin-top: 0;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
+}
+
+.location-info {
+	padding: 0 50px 50px 50px;
+	text-align: center;
+}
+
+.location-info h3 {
+	font-size: 24px;
+	font-weight: 300;
+	color: rgba(12, 70, 100, 0.8);
+	margin-bottom: 20px;
+}
+
+.location-info p {
+	font-size: 16px;
+	color: #666;
+	margin: 10px 0;
+	line-height: 1.4;
 }
 
 .main {

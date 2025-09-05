@@ -9,5 +9,9 @@ html
     section.helloworld
       h1#message= message
       h2 from #{name}
+      .location-info
+        h3 Your Location Information
+        p IP Address: #{userIP}
+        p #{locationMessage}
     footer.info
         p Build Number: #{buildNumber}  Commit: #{shortCommit}
